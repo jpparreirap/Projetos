@@ -24,7 +24,7 @@ steps:
   displayName: 'Build Solution'
 
 - script: dotnet test $(solution) --configuration $(buildConfiguration) --no-build --collect:"xPlat Code Coverage"
-  displayName: 'Build Solution'
+  displayName: 'Test Solution'
 
 - task: Docker@2
   inputs:
